@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jethalal Approved Birthday</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;900&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --jetha-teal: #008080;
+            --daya-pink: #ff69b4;
+            --gold: #d4af37;
+            --dark: #0a0a0a;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://media.tenor.com/XbeL7v_2v_AAAAAC/jethalal-jethalal-dance.gif'); /* Jetha dancing in BG */
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-family: 'Bungee', cursive;
+            font-size: 4rem;
+            margin: 0;
+            color: var(--gold);
+            text-shadow: 3px 3px 0px #ff0000;
+        }
+
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Floating Memes Section */
+        .meme-container {
+            padding: 100px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .meme-card {
+            width: 300px;
+            background: #1a1a1a;
+            border: 2px solid var(--gold);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .meme-card:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .meme-card img { width: 100%; height: 200px; object-fit: cover; }
+        .meme-card p { padding: 15px; font-weight: bold; }
+
+        /* The "Nonsense" Button */
+        .jetha-btn {
+            background: var(--gold);
+            color: black;
+            padding: 20px 40px;
+            font-family: 'Bungee', sans-serif;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin: 50px 0;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .jetha-btn:hover { background: #fff; transform: scale(1.1); }
+
+        /* Secret Message Area */
+        #secret-message {
+            display: none;
+            padding: 50px;
+            background: #222;
+            border-top: 5px solid var(--daya-pink);
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        footer { padding: 40px; color: #555; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <p style="letter-spacing: 5px; color: var(--daya-pink);">SITARA-E-GOKULDHAM</p>
+        <h1>HAPPY BIRTHDAY <br> Yesha !</h1>
+        <p class="tagline">"Nonsense! Life is cool, but you are cooler."</p>
+        
+    </section>
+
+    <div class="meme-container">
+        <div class="meme-card">
+            <img src="https://media.tenor.com/7S8-oQd9-mAAAAAM/jethalal-babita-ji.gif" alt="Babita Ji Vibe">
+            <p>You looking at your birthday cake like Jetha looks at Babita Ji.</p>
+        </div>
+        <div class="meme-card">
+            <img src="https://media.tenor.com/L88m0Yg9Xm8AAAAM/jethalal-iyer.gif" alt="Iyer vs Jetha">
+            <p>Haters (Iyer) will say you're getting old. Ignore them.</p>
+        </div>
+        <div class="meme-card">
+            <img src="https://media.tenor.com/p_9rE-u8A08AAAAM/tmkoc-daya.gif" alt="Daya Dance">
+            <p>Me doing Garba because it's finally your day!</p>
+        </div>
+    </div>
+
+    <button class="jetha-btn" onclick="revealMessage()">CLICK FOR "CHAI-NASHTA" MESSAGE</button>
+
+    <div id="secret-message">
+        <h2 style="color: var(--daya-pink);">Hey Yesha,</h2>
+        <p>
+            Ae DOBII! Happy Birthday!! . 
+            May your year be as successful as Bagha’s Pani puri scheme idea and as peaceful as 
+            Jetha’s sleep (when bapuji isn't shouting). <br><br>
+            
+            <br><br>
+            <strong>- Prakhar</strong>
+        </p>
+        <img src="https://media.tenor.com/fA67Xp_9YfUAAAAM/jethalal-jethaji.gif" width="150">
+    </div>
+
+    <footer>
+        Janam din mubarak @ yesha
+    </footer>
+
+    <script>
+        function revealMessage() {
+            const msg = document.getElementById('secret-message');
+            msg.style.display = 'block';
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            alert("DOBI! Message unlocked successfully!");
+        }
+    </script>
+
+</body>
+</html>
